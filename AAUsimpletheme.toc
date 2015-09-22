@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Prepayment}{7}{0}{1}
+\beamer@sectionintoc {2}{Security Economics}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Smart Meter Fraud}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Privacy}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Strategic Vulnerabilities}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Overregulation}{13}{0}{2}
+\beamer@sectionintoc {3}{hi}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Conflict of Interest}{14}{0}{3}
+\beamer@sectionintoc {4}{Architecture}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Differences in Europe}{15}{0}{4}

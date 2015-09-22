@@ -1,0 +1,224 @@
+\documentclass[10pt]{beamer}
+\usetheme[
+%%% options passed to the outer theme
+%    progressstyle=movCircCnt,   %either fixedCircCnt, movCircCnt, or corner
+%    rotationcw,          % change the rotation direction from counter-clockwise to clockwise
+%    shownavsym          % show the navigation symbols
+  ]{AAUsimple}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+% Change the bar and sidebar colors:
+%\setbeamercolor{AAUsimple}{fg=red!20,bg=red}
+%\setbeamercolor{sidebar}{bg=red!20}
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=blue}
+% Change the normal text color background:
+%\setbeamercolor{normal text}{fg=black,bg=gray!10}
+% ... and you can of course change a lot more - see the beamer user manual.
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{helvet}
+
+% colored hyperlinks
+\newcommand{\chref}[2]{%
+  \href{#1}{{\usebeamercolor[bg]{AAUsimple}#2}}%
+}
+
+\title{Smart meter security: a survey by Ross Anderson}
+
+\subtitle{Specialization Course in Distributed Systems}  % could also be a conference name
+
+\date{\today}
+
+\author{
+  Bruno Thalmann\\
+  \href{mailto:bthalm11@student.aau.dk}{{\tt bthalm11@student.aau.dk}}
+}
+
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+\institute[
+%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+  Dept.\ of Computer Science\\
+  Aalborg University\\
+  Denmark
+] % optional - is placed in the bottom of the sidebar on every slide
+{% is placed on the bottom of the title page
+  Department of Computer Science\\
+  Aalborg University\\
+  Denmark
+  
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+% specify a logo on the titlepage (you can specify additional logos an include them in 
+% institute command below
+\pgfdeclareimage[height=1.5cm]{titlepagelogo}{AAUgraphics/aau_logo_new} % placed on the title page
+%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{AAUgraphics/aau_logo_new} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
+
+\begin{document}
+% the titlepage
+{\aauwavesbg%
+\begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page
+  \titlepage
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+% TOC
+\begin{frame}{Agenda}{}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+% motivation for creating this theme
+\begin{frame}{Introduction}{}
+\begin{block}{Why the AAU Simple beamer theme?}
+  \begin{itemize}
+    \item<1-> During the last couple of years, I have shared the beamer themes named \chref{http://kom.aau.dk/~jkn/latex/latex.php\#beamer_aausidebar}{AAU Sidebar} and \chref{http://kom.aau.dk/~jkn/latex/latex.php\#beamer_aalborg}{Aalborg} on my website \chref{http://kom.aau.dk/~jkn}{http://kom.aau.dk/\textasciitilde jkn}.
+    \item<2-> Both of these themes feature a sidebar in which the table of content and progress are shown.
+    \item<3-> Some people (in particular one - Yes, I am looking at you, Mads) have been asking about an AAU beamer theme without a sidebar. The present theme named \alert{AAU Simple} is precisely that. 
+    \item<4-> Like the \chref{http://kom.aau.dk/~jkn/latex/latex.php\#beamer_aausidebar}{AAU Sidebar} theme, the theme is not really useful to people not affiliated with AAU due to the tight integration between the theme and the round AAU logo. However, everyone is of course encouraged to download and modify the theme according to their own needs. 
+  \end{itemize}
+\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\subsection{Prepayment}
+\begin{frame}{Prepayment}{South African Example}
+  \begin{itemize}
+  	\item Why prepayment?
+  	\begin{itemize}
+  		\item Poor households
+  		\item Informal accommodation
+  	\end{itemize}
+    \item Parties
+    \begin{itemize}
+    	\item Eskom - state owned
+    	\item Local electricity distributors
+    	\item Token vending agents
+    	\item Customers vendors
+    	\item Equipment vendors
+    \end{itemize}
+    \item Issues
+    \begin{itemize}
+    	\item Brownout
+    	\item Token vending machines
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Security Economics}
+\begin{frame}{Security Economics}{South African Example}
+	\begin{itemize}
+		\item Going from credit to prepayment resulted in 10\% reduced energy usage
+		\item Same in Northern Ireland, Russia and Brazil
+		\item People care more about their usage because they have to go to the vending station and use their ATM card or cash
+		\item Easy debt management - no court order, no replacement of meter 
+	\end{itemize}
+\end{frame}
+
+\subsection{Smart Meter Fraud}
+\begin{frame}{Smart Meter Fraud}{General}
+	\begin{itemize}
+		\item Vulnerabilities will get industrialised
+		\item The South African example shows this 
+		\item Fixing a bug is very expensive
+		\item Replacing 100 million meters in Europe would take 5 years and cost \$20bn
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\subsection{Privacy}
+\begin{frame}{Smart Meter Data}{The problem}
+	\begin{itemize}
+		\item Smart meter data in Europe is recorded in fine granularity
+		\item Extract personal information by analysing the meter data
+		\begin{itemize}
+			\item How many live in the house?
+			\item When are they asleep?
+			\item Are they home at the moment?
+		\end{itemize}
+		\item Home appliance vendors, burglars etc.
+		\item Customer vs energy company owned data
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Smart Meter Data}{Who owns it?}
+	\begin{itemize}
+		\item Most countries move toward customer owned data
+		\item The tussle is the granularity one should share
+		\item Energy company: 48 readings per 24h
+		\item Customer: Only enough for billing
+		\item European Convention on Human Rights: European citizens have the right to respect for the privacy	of their family life.
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\subsection{Strategic Vulnerabilities}
+\begin{frame}{Centralised Metering System}
+\begin{itemize}
+	\item Avoid rolling out a truck to the customer
+	\item When countries are in conflict - energy is a target
+	\item Remote computer exploits, vulnerabilities:
+	\begin{itemize}
+		\item Software upgrade
+		\item Tariff setting
+		\item Billing
+		\item API attacks
+		\item Applets
+	\end{itemize}
+	\item General problem: Replacing hardware is expensive
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\subsection{Overregulation}
+\begin{frame}{Overregulation}
+	\begin{itemize}
+		\item Concerns about over regulating the smart meter security
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{hi}
+\subsection{Conflict of Interest}
+\begin{frame}{Company vs Government}
+	\begin{itemize}
+		\item Companies buy energy which varies by time of day
+		\item Ikke interessant??!?!
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Architecture}
+\subsection{Differences in Europe}
+\begin{frame}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+\end{frame}
+
+{\aauwavesbg
+\begin{frame}[plain,noframenumbering]
+  \finalpage{Questions}
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+\end{document}
