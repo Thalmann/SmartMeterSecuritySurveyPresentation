@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.36pt}
+\beamer@endinputifotherversion {3.19pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
@@ -6,46 +6,49 @@
 \headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\slideentry {1}{0}{3}{3/6}{}{0}}
-\headcommand {\beamer@framepages {3}{6}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{7}{Prepayment}}\headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\slideentry {1}{1}{1}{7/7}{Prepayment}{0}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\sectionentry {2}{Prepayment}{4}{Prepayment}{0}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Prepayment}}\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Prepayment}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\sectionentry {3}{Security Economics}{5}{Security Economics}{0}}
+\headcommand {\beamer@sectionpages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {3}{0}{2}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Smart Meter Fraud}}\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {3}{1}{1}{6/6}{Smart Meter Fraud}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{7}{Privacy}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {3}{2}{1}{7/7}{Privacy}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\sectionentry {2}{Security Economics}{8}{Security Economics}{0}}
-\headcommand {\beamer@sectionpages {3}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{8/8}{Privacy}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Smart Meter Fraud}}\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\slideentry {2}{1}{1}{9/9}{Smart Meter Fraud}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{9}{Strategic Vulnerabilities}}\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\slideentry {3}{3}{1}{9/9}{Strategic Vulnerabilities}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{Privacy}}\headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\slideentry {2}{2}{1}{10/10}{Privacy}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{10}{Overregulation}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{4}{1}{10/10}{Overregulation}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {2}{2}{2}{11/11}{Privacy}{0}}
+\headcommand {\sectionentry {4}{hi}{11}{hi}{0}}
+\headcommand {\beamer@sectionpages {5}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{11}{Conflict of Interest}}\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\slideentry {4}{1}{1}{11/11}{Conflict of Interest}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{Strategic Vulnerabilities}}\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\slideentry {2}{3}{1}{12/12}{Strategic Vulnerabilities}{0}}
+\headcommand {\sectionentry {5}{Architecture}{12}{Architecture}{0}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{12}{Differences in Europe}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {5}{1}{1}{12/12}{Differences in Europe}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{13}{Overregulation}}\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {2}{4}{1}{13/13}{Overregulation}{0}}
+\headcommand {\slideentry {5}{1}{2}{13/13}{Differences in Europe}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {3}{hi}{14}{hi}{0}}
-\headcommand {\beamer@sectionpages {8}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Conflict of Interest}}\headcommand {\beamer@subsectionpages {14}{13}}
-\headcommand {\slideentry {3}{1}{1}{14/14}{Conflict of Interest}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {4}{Architecture}{15}{Architecture}{0}}
-\headcommand {\beamer@sectionpages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{15}{Differences in Europe}}\headcommand {\beamer@subsectionpages {15}{14}}
-\headcommand {\slideentry {4}{1}{1}{15/15}{Differences in Europe}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {4}{1}{2}{16/16}{Differences in Europe}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {1}{16}}
-\headcommand {\beamer@subsectionpages {15}{16}}
-\headcommand {\beamer@sectionpages {15}{16}}
-\headcommand {\beamer@documentpages {16}}
+\headcommand {\beamer@partpages {1}{13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\beamer@sectionpages {12}{13}}
+\headcommand {\beamer@documentpages {13}}
 \headcommand {\def \inserttotalframenumber {11}}
