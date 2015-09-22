@@ -97,9 +97,20 @@
 \end{frame}
 %%%%%%%%%%%%%%%%
 
+\subsection{Smart Meter}
+\begin{frame}{Smart Meter}
+\begin{itemize}
+\item A device that records electricity, gas or water consumption in a household
+\\~\\
+\begin{center}
+\includegraphics[scale=.25]{./graphics/smart_meter}
+\end{center}
+\end{itemize}
+\end{frame}
+
 \section{Prepayment}
 \subsection{Prepayment}
-\begin{frame}{Prepayment}{South African Example}
+\begin{frame}{South African Example}{Prepayment}
   \begin{itemize}
   	\item Why prepayment?
   	\begin{itemize}
@@ -124,7 +135,7 @@
 %%%%%%%%%%%%%%%%
 
 \section{Security Economics}
-\begin{frame}{Security Economics}{South African Example}
+\begin{frame}{South African Example}{Security Economics}
 	\begin{itemize}
 		\item Going from credit to prepayment resulted in 10\% reduced energy usage
 		\item Same in Northern Ireland, Russia and Brazil
@@ -144,17 +155,21 @@
 \end{frame}
 %%%%%%%%%%%%%%%%
 
-\subsection{Privacy}
-\begin{frame}{Smart Meter Data}{The problem}
+\section{Privacy}
+\begin{frame}{Smart Meter Data}{Privacy issues}
 	\begin{itemize}
 		\item Smart meter data in Europe is recorded in fine granularity
+		\\~\\
 		\item Extract personal information by analysing the meter data
 		\begin{itemize}
 			\item How many live in the house?
+			
 			\item When are they asleep?
 			\item Are they home at the moment?
+		\\~\\	
 		\end{itemize}
 		\item Home appliance vendors, burglars etc.
+		\\~\\
 		\item Customer vs energy company owned data
 	\end{itemize}
 \end{frame}
@@ -164,55 +179,23 @@
 \begin{frame}{Smart Meter Data}{Who owns it?}
 	\begin{itemize}
 		\item Most countries move toward customer owned data
+		\\~\\
 		\item The tussle is the granularity one should share
+		\\~\\
 		\item Energy company: 48 readings per 24h
+		\\~\\
 		\item Customer: Only enough for billing
+		\\~\\
 		\item European Convention on Human Rights: European citizens have the right to respect for the privacy	of their family life.
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-\subsection{Strategic Vulnerabilities}
-\begin{frame}{Centralised Metering System}
-\begin{itemize}
-	\item Avoid rolling out a truck to the customer
-	\item When countries are in conflict - energy is a target
-	\item Remote computer exploits, vulnerabilities:
-	\begin{itemize}
-		\item Software upgrade
-		\item Tariff setting
-		\item Billing
-		\item API attacks
-		\item Applets
-	\end{itemize}
-	\item General problem: Replacing hardware is expensive
-\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-\subsection{Overregulation}
-\begin{frame}{Overregulation}
-	\begin{itemize}
-		\item Concerns about over regulating the smart meter security
-	\end{itemize}
-	
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-\section{hi}
-\subsection{Conflict of Interest}
-\begin{frame}{Company vs Government}
-	\begin{itemize}
-		\item Companies buy energy which varies by time of day
-		\item Ikke interessant??!?!
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%
 
 \section{Architecture}
 \subsection{Differences in Europe}
-\begin{frame}
+\begin{frame}{Differences in Europe}
 	\begin{itemize}
+	\item Italy - monopoly
 		\item Germany - a customer can choose an energy company
 		\begin{itemize}
 			\item Company sets up smart meter
@@ -221,8 +204,63 @@
 		\item United Kingdom - centralised system by a Data Communication Company
 			\begin{itemize}
 				\item Same smart meter
+				\item Easy switch of energy company
+				\item Wash now or later - privacy, smart meter support
 			\end{itemize}
+			
+			                      	\item When the wind blows in Germany
+			                      	\item There needs to be some sort of communication between the market and the smart meter
 	\end{itemize}
+\end{frame}
+
+
+
+\subsection{Strategic Vulnerabilities}
+\begin{frame}{Centralised Metering System}{Pros and cons}
+\begin{itemize}
+	\item Used in the UK
+	\\~\\
+	\item Avoid rolling out a truck to the customer
+	\\~\\
+	\item When countries are in conflict - energy is a target
+	\\~\\
+	\item Remote computer exploits, vulnerabilities:
+	\begin{itemize}
+		\item Software upgrade
+		\item Tariff setting
+		\item Billing
+		\item API attacks
+		\item Applets
+	\end{itemize}
+	~\\
+	\item General problem: Replacing hardware is expensive
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%z
+
+
+\subsection{Opportunities}
+\begin{frame}{Oppurtunities}
+	\begin{itemize}
+		\item Air-condition example
+		\\~\\
+		\item Customer web-interface
+		\\~\\
+		\item Control the data granularity and when devices are used
+	\end{itemize}
+\end{frame}
+
+\section{Possible Solution}
+\begin{frame}
+	\begin{itemize}
+		\item Open Home Controller
+		\item Apache server - A way for the customer to manage appliances
+		\item The situation right now:
+	\end{itemize}
+	~\\
+	\begin{center}
+	\includegraphics[scale=.25]{./graphics/smart_meter_display}
+	\end{center}
 \end{frame}
 
 {\aauwavesbg
